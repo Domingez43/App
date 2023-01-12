@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:stype="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/settings_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="4dp"
+            android:src="@drawable/line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_marginVertical="10dp"
+        android:id="@+id/settingsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Settings"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/transmit_settings"
+        android:layout_width="match_parent"
+        android:background="@drawable/section_background"
+        android:layout_height="105dp"
+        android:orientation="horizontal"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/always_button"
+            android:paddingHorizontal="0dp"
+            android:layout_height="90dp"
+            app:cornerRadius="15dp"
+            android:layout_width="0dp"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:drawableTop="@drawable/ic_outline_smartphone_24"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="14dp"
+            android:text="ALWAYS"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/locked_button"
+            android:paddingHorizontal="0dp"
+            android:layout_height="90dp"
+            app:cornerRadius="15dp"
+            android:layout_width="0dp"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:drawableTop="@drawable/ic_outline_smartphone_24"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="14dp"
+            android:layout_marginHorizontal="15dp"
+            android:text="LOCKED"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/unlocked_button"
+            android:paddingHorizontal="0dp"
+            android:layout_height="90dp"
+            app:cornerRadius="15dp"
+            android:layout_width="0dp"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:drawableTop="@drawable/ic_outline_smartphone_24"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="14dp"
+            android:text="UNLOCKED"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/section_background"
+        android:id="@+id/password_form"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="vertical"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="Password"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/password_enter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Password"
+                android:layout_weight="7.5"/>
+            <!--
+            <Button
+                android:id="@+id/confirm_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:cornerRadius="10dp"
+                android:layout_weight="2.5"
+                android:text="CONFIRM"
+                android:padding="2dp"
+                android:textColor="@color/md_theme_light_onPrimary"/> -->
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/periodicity_form"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/section_background"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="5dp"
+            android:weightSum="10">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Transmitting periodicity"
+                android:layout_weight="7.5"/>
+            <TextView
+                android:id="@+id/periodicity_val"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="10"
+                android:textAlignment="center"
+                android:background="@drawable/button_background"
+                android:layout_weight="1.5"/>
+            <TextView
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="sec"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/periodicity_slider"
+            android:saveEnabled="true"
+            app:tickVisible="false"
+            app:labelBehavior="gone"
+            app:haloRadius="0dp"
+            android:layout_width="match_parent"
+            app:trackColor="@color/md_theme_dark_onPrimary"
+            android:layout_height="wrap_content"
+            android:valueFrom="2"
+            android:valueTo="30"
+            android:stepSize="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/TXPower_form"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/section_background"
+        android:orientation="vertical"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="5dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Tx Power"
+                android:layout_marginStart="4dp"
+                android:layout_weight="7.5"/>
+
+            <TextView
+                android:id="@+id/txpower_val"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:background="@drawable/button_background"
+                android:text="10"
+                android:layout_weight="1.5"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/TXPower_slider"
+            android:saveEnabled="true"
+            app:tickVisible="false"
+            app:haloRadius="0dp"
+            app:trackColor="@color/md_theme_dark_onPrimary"
+            app:labelBehavior="gone"
+            android:valueFrom="-128"
+            android:valueTo="127"
+            android:stepSize="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
+
+<!--
+<LinearLayout
+        android:background="@drawable/section_background"
+        android:id="@+id/password_form"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="vertical"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="Receive Notification to unlock Door"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:layout_marginHorizontal="10dp">
+            <TextView
+                android:id="@+id/switch_status"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_width="100dp"
+                android:text="ENABLED"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+-->

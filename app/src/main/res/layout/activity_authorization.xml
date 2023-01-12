@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuthorizationActivity"
+    android:orientation="vertical"
+    android:id="@+id/authorization">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <ImageButton
+            android:id="@+id/home_button"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_round_home_24"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_outline_account_circle_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STATUS : UNAUTHORIZED"
+        android:textColor="@color/md_theme_dark_errorContainer"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/user_name_editText"
+        android:paddingHorizontal="15dp"
+        android:hint="Name"
+        android:background="@drawable/button_background_alt"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:maxLength="25"
+        android:layout_height="50dp">
+    </EditText>
+
+    <TextView
+        android:id="@+id/name_status"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:text=""/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/request_button"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        app:cornerRadius="15dp"
+        android:textSize="14dp"
+        android:enabled="false"
+        android:textColor="@color/md_theme_light_onPrimary"
+        android:text="REQUEST" />
+
+
+
+</LinearLayout>

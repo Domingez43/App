@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/home">
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/md_theme_dark_primary"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginVertical="14dp"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_width="28dp"
+            android:layout_height="28dp"/>
+        <TextView
+            android:layout_marginVertical="12dp"
+            android:textSize="24dp"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History"/>
+    </LinearLayout>
+    -->
+
+    <!--
+    <LinearLayout
+        android:background="@drawable/section_background"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/ic_outline_door_back_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/md_theme_light_onPrimary"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="A532"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="85dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_history_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/md_theme_light_onPrimary"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:text="15.11. 2022 13:24"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    -->
+
+
+
+
+    <!--
+        <LinearLayout
+            android:background="@drawable/section_background"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/md_theme_light_onPrimary"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="MONDAY"/>
+                <LinearLayout
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                        <TextView
+                            android:textSize="16dp"
+                            android:textStyle="normal"
+                            android:textColor="@color/md_theme_light_onPrimary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Transmit"/>
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:layout_gravity="center"
+                android:paddingHorizontal="10dp"
+                android:layout_marginLeft="115dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Time"
+                android:textSize="18dp"
+                android:textColor="@color/md_theme_light_onPrimary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/section_background"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/md_theme_light_onPrimary"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="TUESDAY"/>
+                <LinearLayout
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        android:textColor="@color/md_theme_light_onPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transmit"/>
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:layout_gravity="center"
+                android:paddingHorizontal="10dp"
+                android:layout_marginLeft="115dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Time"
+                android:textSize="18dp"
+                android:textColor="@color/md_theme_light_onPrimary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/section_background"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/md_theme_light_onPrimary"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="WEDNESDAY"/>
+                <LinearLayout
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        android:textColor="@color/md_theme_light_onPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transmit"/>
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:layout_gravity="center"
+                android:paddingHorizontal="10dp"
+                android:layout_marginLeft="115dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Time"
+                android:textSize="18dp"
+                android:textColor="@color/md_theme_light_onPrimary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/section_background"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/md_theme_light_onPrimary"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="THURSDAY"/>
+                <LinearLayout
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        android:textColor="@color/md_theme_light_onPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transmit"/>
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:layout_gravity="center"
+                android:paddingHorizontal="10dp"
+                android:layout_marginLeft="115dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Time"
+                android:textSize="18dp"
+                android:textColor="@color/md_theme_light_onPrimary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/section_background"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/md_theme_light_onPrimary"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="FRIDAY"/>
+                <LinearLayout
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        android:textColor="@color/md_theme_light_onPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transmit"/>
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:layout_gravity="center"
+                android:paddingHorizontal="10dp"
+                android:layout_marginLeft="115dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Time"
+                android:textSize="18dp"
+                android:textColor="@color/md_theme_light_onPrimary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/section_background"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/md_theme_light_onPrimary"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="SATURDAY"/>
+                <LinearLayout
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        android:textColor="@color/md_theme_light_onPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transmit"/>
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:layout_gravity="center"
+                android:paddingHorizontal="10dp"
+                android:layout_marginLeft="115dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Time"
+                android:textSize="18dp"
+                android:textColor="@color/md_theme_light_onPrimary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/section_background"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/md_theme_light_onPrimary"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="SUNDAY"/>
+                <LinearLayout
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textSize="16dp"
+                        android:textStyle="normal"
+                        android:textColor="@color/md_theme_light_onPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transmit"/>
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:layout_gravity="center"
+                android:paddingHorizontal="10dp"
+                android:layout_marginLeft="115dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Time"
+                android:textSize="18dp"
+                android:textColor="@color/md_theme_light_onPrimary"/>
+
+        </LinearLayout>
+
+    -->
+
+
+    <LinearLayout
+        android:background="@drawable/section_background"
+        android:layout_marginVertical="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/history_button"
+            android:paddingHorizontal="2dp"
+            android:layout_height="90dp"
+            app:cornerRadius="15dp"
+            android:layout_width="0dp"
+            android:drawableTop="@drawable/ic_baseline_history_24"
+            android:textSize="14dp"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:text="HISTORY"
+            android:layout_weight="1"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/schedule_button"
+            android:paddingHorizontal="2dp"
+            android:layout_height="90dp"
+            app:cornerRadius="15dp"
+            android:layout_width="0dp"
+            android:layout_marginHorizontal="20dp"
+            android:drawableTop="@drawable/ic_outline_calendar_month_24"
+            android:textSize="14dp"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:text="SCHEDULE"
+            android:layout_weight="1"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/settings_button"
+            android:layout_height="90dp"
+            app:cornerRadius="15dp"
+            android:layout_width="0dp"
+            android:drawableTop="@drawable/ic_outline_settings_24"
+            android:textSize="14dp"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:text="SETTINGS"
+            android:layout_weight="1"
+            android:paddingHorizontal="2dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginVertical="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/section_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:text="STATUS"/>
+        <TextView
+            android:id="@+id/timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:text="TextView"
+            android:layout_marginVertical="10dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:id="@+id/btn3"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            app:cornerRadius="25dp"
+            android:textSize="18dp"
+            android:text="BROADCAST" />
+
+        <TextView
+            android:id="@+id/api_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRY"
+            android:textSize="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>
